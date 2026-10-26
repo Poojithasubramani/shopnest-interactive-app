@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts Embed Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+            <!-- Header Section Here -->
+
+<header class="header">
+    <div class="logo">
+        <img src="images/shopnestlogo.png" alt="ShopNest">
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Deals</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="search_actions">
+
+        <div class="search_box">
+            <input type="text" id ="search_input" class="search_bar" placeholder=" 🔍   Search products...">
+        </div>
+
+        <div class="cart_btn">
+            <a href="cart.html" style="display: flex; align-items: center; position: relative;">
+                <img src="images/cartlogo.svg" alt="Cart">
+                &nbsp;&nbsp;<span class="card-text cart_text">Cart</span>
+                <span class="cart-badge" id="badge"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+<!-- Category Filter Section -->
+<div class="container-fluid bg-light py-3 sticky-category">
+        <div class="container">
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 ">
+
+            <span class="fw-semibold me-2">Filter by Category:</span>
+            <button type="button" class="btn btn-outline-primary rounded-pill px-4" data-category="All">
+                All
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-pill px-4" data-category="Electronics">
+                Electronics
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-pill px-4" data-category="Clothing">
+                Clothing
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-pill px-4" data-category="Footwear">
+                Footwear
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-pill px-4" data-category="Books">
+                Books
+            </button>
+        </div>
+    </div>
+</div>
+
+<main class="main_section">
+        
+                <!-- Hero Section -->
+   
+    <section class="hero" id="home">
+        <div class="hero_image">
+            <img src="images/shopnestbackground.jpeg" alt="Hero Image" width="1350" height="400">
+        </div>
+        <div class="hero_content">
+            <p>Welcome to ShopNest</p>
+                <h1>Discover Amazing <br>Products</h1>
+            <p>
+                Shop your favourite products at the best prices.
+                <br>all in one place.
+            </p>
+            <div class="hero_buttons">
+                <a href="#" class="btn btn-primary shop-btn" id="products">Shop Now</a>
+                <a href="#" class="btn btn-primary deals-btn" id="products">View Deals</a>
+            </div>
+        </div>
+
+    </section>
+
+            <!-- Featured Products Section -->
+
+    <section class="product_section" id="products">
+        <div class="prd_title">
+            <h2 style="text-align: center; font-size:28px;">Featured Products</h2>
+            <p style="text-align: center;">Explore our popular products and exciting offers.</p>
+        </div>
+        <!-- No Matching Products Message -->
+        <div id="noResults" class="d-none text-center py-5">
+            <div class="alert alert-secondary d-inline-block px-4 py-3">
+                <h5 class="mb-2">No Matching Products Found!</h5>
+                <p class="mb-0">
+                    Please try another search or category.
+                </p>
+            </div>
+        </div>
+        <div class="product_container row g-3">
+            <!-- Products are Dynamically Loaded Here -->
+        </div>
+    </section>
+            <!-- Category Section -->
+    <section class="section_category" id="categories">
+        <div class="prd_title">
+            <h2 style="text-align: center; font-size:25px;padding-top:20px;">Shop By Category</h2>
+            <p style="text-align: center;">Find everything you need from our popular categories</p>
+        </div>
+        <div class="product_category row g-3">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="category">
+                    <div class="category_image">
+                    <img src="images/el.jpeg" alt="" width="300"height="200">
+                    
+                    </div>
+                    <div class="category_text">
+                    <a href="#">Electronics&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="category">
+                    <div class="category_image">
+                        <img src="images/clothing.jpeg" alt="" width="300"height="200">
+                    </div>
+                    <div class="category_text">
+                    <a href="#">Clothing&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="category">
+                    <div class="category_image">
+                    <img src="images/foot.jpeg" alt="" width="300"height="200">
+                    
+                    </div>
+                    <div class="category_text">
+                    <a href="#">Footwear&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="category">
+                    <div class="category_image">
+                    <img src="images/book.jpeg" alt="" width="300"height="200">
+                    
+                    </div>
+                    <div class="category_text">
+                    <a href="#">Books&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>               
+    </section> 
+                <!-- Newsletter Subscription -->
+    <aside class="newsletter_aside">
+        <div class="newsletter_blog">
+            <div class="newsletter_image">            
+                <img src="images/newsletter.jpg" alt="" style="width:40px;height:40px;">
+            </div>
+            <div class="newsletter_text">
+                <h4>Subscribe to Our Newsletter</h4>
+                <p>Get the latest offers, discounts and product updates</p>
+            </div>
+        </div>
+        <div class="newsletter_input">
+            <input type="email"placeholder="Enter your email address" id="">&nbsp;
+            <button class="btn btn-primary submit_btn">Subscribe</button>
+        </div>
+    </aside>
+</main>
+                <!-- Footer Section Here -->
+<footer class="footer" id="contact">
+    <div class="container">
+
+    <div class="row footer-grid">
+        <div class="col-12 col-md-6 col-lg-3">
+            <h3>About ShopNest</h3>
+            <p>ShopNest is your one-step 
+                online <br>shopping destination for 
+                quality <br>products at great prices</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <h3>Quick Links</h3>
+            <a href="#" style="color:rgb(59, 59, 223);">Home</a>
+            <a href="#" style="color:rgb(59, 59, 223);">Products</a>
+            <a href="#" style="color:rgb(59, 59, 223);">Categories</a>
+            <a href="#" style="color:rgb(59, 59, 223);">Deals</a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <h3>Contact</h3>
+            <p>📞 +91 98765 43210</p>
+            <p>🖂support@shopnest.com</p>
+            <p>🩸 Chennai,India</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-social">
+            <h3>Follow Us</h3>
+                <div class="social_icons">
+                    <a href="https://www.facebook.com/"target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/"target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ShopNest. All rights reserved.
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

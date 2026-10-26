@@ -1,0 +1,112 @@
+[
+   
+  {
+    "id": 1,
+    "name": " Men Graphic Print Round Neck Polyester White T-Shirt",
+    "category": "Clothing",
+    "price": 600,
+    "originalPrice":1200,
+    "rating": 4.3,
+    "imageUrl": "images/teashirt.jpeg"
+  },
+   {
+    "id": 2,
+    "name": "BRUTON Trendy Sports Running Running Shoes For Men",
+    "category": "FootWear",
+    "price": 1900,
+    "originalPrice": 3900,
+    "rating": 4.5,
+    "imageUrl": "images/runningshoe.webp"
+  },
+   {
+    "id": 3,
+    "name": "boAt Lunar Discovery HD Display Smartwatch",
+    "category": "Electronics",
+    "price": 900,
+    "originalPrice": 1300,
+    "rating": 4.6,
+    "imageUrl": "images/smartw.jpeg"
+  },
+   {
+    "id": 4,
+    "name": "boAt Rockerz,BT v5.4 Bluetooth Headset",
+    "category": "Electronics",
+    "price": 1100,
+    "originalPrice": 1800,
+    "rating": 4.1,
+    "imageUrl": "images/headphn.jpeg"
+  },
+  
+   {
+    "id": 5,
+    "name": "Acer Aspire 3 A314-35 (Intel HD) Laptop",
+    "category": "Electronics",
+    "price": 30000,
+    "originalPrice": 23000,
+    "rating": 4.9,
+    "imageUrl": "images/acerlaptop.jpg"
+  },
+   {
+    "id": 6,
+    "name": "HP Victus 15-fa2197TX Intel Core i5 Laptop",
+    "category": "Electronics",
+    "price": 35000,
+    "originalPrice": 40000,
+    "rating": 5,
+    "imageUrl": "images/laptop.webp"
+  },
+  {
+    "id": 7,
+    "name": "Java The Complete Reference 12TH EDITION",
+    "category": "Books",
+    "price": 580,
+    "originalPrice": 650,
+    "rating": 4.2,
+    "imageUrl": "images/javabook.webp"
+  },
+  {
+    "id": 8,
+    "name": "Python Simplified Handwritten Notes",
+    "category": "Books",
+    "price": 600,
+    "originalPrice": 760,
+    "rating": 4.9,
+    "imageUrl": "images/python.webp"
+  },
+  {
+    "id": 9,
+    "name": "JQR SPACEXX Running Shoes For Men ",
+    "category": "Footwear",
+    "price": 800,
+    "originalPrice": 1100,
+    "rating": 3.9,
+    "imageUrl": "images/shoe.webp"
+  },
+   {
+    "id": 10,
+    "name": "Women Pure Silk Kurta Sharara Dupatta Set ",
+    "category": "Clothing",
+    "price": 1494,
+    "originalPrice": 4440,
+    "rating": 4.8,
+    "imageUrl": "images/womenkurta.webp"
+  },
+  {
+    "id": 11,
+    "name": "Men Printed Round Neck Polyester Black T-Shirt",
+    "category": "Clothing",
+    "price": 780,
+    "originalPrice": 1450,
+    "rating":3.5,
+    "imageUrl": "images/mentshirt.webp"
+  },
+  {
+    "id": 12,
+    "name": "FASHION Women Patola Art Silk Saree",
+    "category": "Clothing",
+    "price": 970,
+    "originalPrice": 1600,
+    "rating": 4.7,
+    "imageUrl": "images/silksaree.webp"
+  }
+]
